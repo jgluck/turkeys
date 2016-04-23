@@ -1,0 +1,10 @@
+div id="time"
+  div id="time_header"
+    h2 Turkey should go in at
+  div id="time_result"
+    p = ""
+
+javascript:
+  var date_string = "#{{@done}}";
+  var date = new Date(date_string)
+  document.getElementById("time_result").innerHTML=date.toLocaleTimeString();

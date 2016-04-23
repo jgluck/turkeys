@@ -1,0 +1,15 @@
+div id="time"
+  form action="/turkey" method="POST" 
+      p Weight:
+      input type="text" name="weight"
+      p Time done by:
+      input type="text" name="time"
+      input type="hidden" name="offset" id="utc-offset"
+      </br></br></br>
+      input.button class="pure-button-primary" type="submit" value="When should I put the turkey in?"
+
+javascript:
+  offset = new Date().getTimezoneOffset()/60
+  document.getElementById("utc-offset").value = offset.toString()
+
+
